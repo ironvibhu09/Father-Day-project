@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+ 
+  width: 100%;
+  padding: 10px;
+}
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="back.mp4" type="video/mp4">
+  
+</video>
+
+<audio id="myAudio1" src="Son 1.mp3" preload="auto"></audio>
+<audio id="myAudio2" src="Dad 1.mp3" preload="auto"></audio>
+<audio id="myAudio3" src="Son 2.mp3" preload="auto"></audio>
+<audio id="myAudio4" src="Dad 2.mp3" preload="auto"></audio>
+<audio id="myAudio5" src="Son 3.mp3" preload="auto"></audio>
+<audio id="myAudio6" src="Dad 3.mp3" preload="auto"></audio>
+
+<div class="content">
+ 
+  <img src = "Dad.png" alt = "Image of Dad" width="420" height="450" >
+<img src = "Boy.png" alt = "Image of Child" width="120" height="200" style="float:right ; margin:100px " >
+  
+  <div id="myDiv1" id="myBtn" id="myAudio1">
+<button onclick="document.getElementById('myAudio1').play();" style="float:right;color:red;border-radius:10px;background-color:yellow"><b>Start<b></button></div>
+<br>
+<div id="myDiv" id="myBtn" id="myAudio2">
+<button onclick="document.getElementById('myAudio2').play();" style="color:red;border-radius:10px;background-color:yellow">Next 1 = next</button></div>      
+<br>
+<div id="myDiv3" id="myBtn" id="myAudio3">
+<button onclick="document.getElementById('myAudio3').play();" style="float:right;color:red;border-radius:10px;background-color:yellow">Next 2 = next 4</button>
+</div>
+<br>
+<div id="myDiv2" id="myBtn" id="myAudio4">
+<button onclick="document.getElementById('myAudio4').play();" style="color:red;border-radius:10px;background-color:yellow">Next 3 = next 3</button>
+</div>
+<br>
+<div id="myDiv4" id="myBtn" id="myAudio5">
+<button onclick="document.getElementById('myAudio5').play();" style="float:right;color:red;border-radius:10px;background-color:yellow">Next 4 = next 5</button> 
+</div>
+<br>
+<div id="myDiv5" id="myBtn" id="myAudio6">
+  <button onclick="document.getElementById('myAudio6').play();" style="color:red;border-radius:10px;background-color:yellow">Next 5 = next 6</button>
+</div>
+
+<script>
+function Next() 
+{
+  alert("DAD : I am doing Great, how are you ?");
+ 
+  var x = document.getElementById("myDiv");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+         }
+}
+</script>
+
+<script>
+function Next2() 
+{
+  alert(" SON : Hello Dad how are you ?");
+  var x = document.getElementById("myAudio");
+  
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+         }
+}
+</script>
+
+<script>
+function Next3() 
+{
+  alert("DAD : Why, is there something special today ?");
+ 
+  var x = document.getElementById("myDiv2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+         }
+}
+</script>
+
+<script>
+function Next4() 
+{
+  alert("SON : I am fine Dad, Do you plan to do anything today ?");
+ 
+  var x = document.getElementById("myDiv3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+         }
+}
+</script>
+
+<script>
+function Next5() 
+{
+  alert("SON : Yes Dad, it is Father's Day today. Happy Father's Day Dad !!!");
+  var x = document.getElementById("myDiv4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+         }
+}
+</script>
+
+<script>
+function Next6() 
+{
+  alert("DAD : Thanks Son,I totally forgot that it is Father's Day today ?");
+  var x = document.getElementById("myDiv5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+         }
+}
+</script>
+
+</body>
+</html>
